@@ -13,20 +13,7 @@ import javax.ejb.Local;
  * @author joker
  */
 @Local
-public interface UnidadFacadeLocal {
+public interface UnidadFacadeLocal extends AbstractInterface<Unidad>{
 
-    void create(Unidad unidad);
-
-    void edit(Unidad unidad);
-
-    void remove(Unidad unidad);
-
-    Unidad find(Object id);
-
-    List<Unidad> findAll();
-
-    List<Unidad> findRange(int[] range);
-
-    int count();
     
 }

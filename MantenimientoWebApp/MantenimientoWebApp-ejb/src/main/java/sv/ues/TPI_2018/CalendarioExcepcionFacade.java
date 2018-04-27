@@ -5,6 +5,7 @@
  */
 package sv.ues.TPI_2018;
 
+import java.util.List;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -27,5 +28,9 @@ public class CalendarioExcepcionFacade extends AbstractFacade<CalendarioExcepcio
     public CalendarioExcepcionFacade() {
         super(CalendarioExcepcion.class);
     }
+
+
+
+
     
 }

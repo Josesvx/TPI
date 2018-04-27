@@ -13,20 +13,6 @@ import javax.ejb.Local;
  * @author joker
  */
 @Local
-public interface CalendarioExcepcionFacadeLocal {
-
-    void create(CalendarioExcepcion calendarioExcepcion);
-
-    void edit(CalendarioExcepcion calendarioExcepcion);
-
-    void remove(CalendarioExcepcion calendarioExcepcion);
-
-    CalendarioExcepcion find(Object id);
-
-    List<CalendarioExcepcion> findAll();
-
-    List<CalendarioExcepcion> findRange(int[] range);
-
-    int count();
+public interface CalendarioExcepcionFacadeLocal extends AbstractInterface<CalendarioExcepcion>{
     
 }

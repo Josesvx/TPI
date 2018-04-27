@@ -13,20 +13,7 @@ import javax.ejb.Local;
  * @author joker
  */
 @Local
-public interface ProcedimientoFacadeLocal {
+public interface ProcedimientoFacadeLocal extends AbstractInterface<Procedimiento>{
 
-    void create(Procedimiento procedimiento);
-
-    void edit(Procedimiento procedimiento);
-
-    void remove(Procedimiento procedimiento);
-
-    Procedimiento find(Object id);
-
-    List<Procedimiento> findAll();
-
-    List<Procedimiento> findRange(int[] range);
-
-    int count();
     
 }

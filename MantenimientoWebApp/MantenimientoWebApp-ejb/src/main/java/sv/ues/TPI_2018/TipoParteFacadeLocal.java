@@ -13,20 +13,7 @@ import javax.ejb.Local;
  * @author joker
  */
 @Local
-public interface TipoParteFacadeLocal {
+public interface TipoParteFacadeLocal extends AbstractInterface<TipoParte>{
 
-    void create(TipoParte tipoParte);
-
-    void edit(TipoParte tipoParte);
-
-    void remove(TipoParte tipoParte);
-
-    TipoParte find(Object id);
-
-    List<TipoParte> findAll();
-
-    List<TipoParte> findRange(int[] range);
-
-    int count();
     
 }

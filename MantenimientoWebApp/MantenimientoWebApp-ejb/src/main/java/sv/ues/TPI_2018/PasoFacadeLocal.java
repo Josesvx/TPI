@@ -13,20 +13,7 @@ import javax.ejb.Local;
  * @author joker
  */
 @Local
-public interface PasoFacadeLocal {
+public interface PasoFacadeLocal extends AbstractInterface<Paso>{
 
-    void create(Paso paso);
-
-    void edit(Paso paso);
-
-    void remove(Paso paso);
-
-    Paso find(Object id);
-
-    List<Paso> findAll();
-
-    List<Paso> findRange(int[] range);
-
-    int count();
     
 }

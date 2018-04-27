@@ -13,20 +13,6 @@ import javax.ejb.Local;
  * @author joker
  */
 @Local
-public interface EquipoFacadeLocal {
-
-    void create(Equipo equipo);
-
-    void edit(Equipo equipo);
-
-    void remove(Equipo equipo);
-
-    Equipo find(Object id);
-
-    List<Equipo> findAll();
-
-    List<Equipo> findRange(int[] range);
-
-    int count();
+public interface EquipoFacadeLocal extends AbstractInterface<Equipo>{
     
 }

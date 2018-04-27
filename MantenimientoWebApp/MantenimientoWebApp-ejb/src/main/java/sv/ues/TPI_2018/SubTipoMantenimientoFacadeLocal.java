@@ -13,20 +13,7 @@ import javax.ejb.Local;
  * @author joker
  */
 @Local
-public interface SubTipoMantenimientoFacadeLocal {
+public interface SubTipoMantenimientoFacadeLocal extends AbstractInterface<SubTipoMantenimiento>{
 
-    void create(SubTipoMantenimiento subTipoMantenimiento);
-
-    void edit(SubTipoMantenimiento subTipoMantenimiento);
-
-    void remove(SubTipoMantenimiento subTipoMantenimiento);
-
-    SubTipoMantenimiento find(Object id);
-
-    List<SubTipoMantenimiento> findAll();
-
-    List<SubTipoMantenimiento> findRange(int[] range);
-
-    int count();
     
 }

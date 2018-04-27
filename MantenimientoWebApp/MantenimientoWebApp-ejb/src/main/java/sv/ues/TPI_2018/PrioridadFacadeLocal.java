@@ -13,20 +13,7 @@ import javax.ejb.Local;
  * @author joker
  */
 @Local
-public interface PrioridadFacadeLocal {
+public interface PrioridadFacadeLocal extends AbstractInterface<Prioridad>{
 
-    void create(Prioridad prioridad);
-
-    void edit(Prioridad prioridad);
-
-    void remove(Prioridad prioridad);
-
-    Prioridad find(Object id);
-
-    List<Prioridad> findAll();
-
-    List<Prioridad> findRange(int[] range);
-
-    int count();
     
 }
