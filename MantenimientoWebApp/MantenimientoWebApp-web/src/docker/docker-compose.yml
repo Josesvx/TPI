@@ -1,6 +1,6 @@
 version: '3'
 services:
-  payara:
+  web:
     build: .
     depends_on:
       - postgres
@@ -9,7 +9,7 @@ services:
   postgres:
     build: 
      context: .
-     dockerfile: dockerfilePostgres
+     dockerfile: DockerfilePostgres
     restart: always
     volumes:
       - vol:/var/lib/postgresql/data
