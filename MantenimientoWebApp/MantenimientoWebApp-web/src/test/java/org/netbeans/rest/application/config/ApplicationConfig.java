@@ -12,7 +12,7 @@ import javax.ws.rs.core.Application;
  *
  * @author joker
  */
-@javax.ws.rs.ApplicationPath("webresources")
+@javax.ws.rs.ApplicationPath("ws")
 public class ApplicationConfig extends Application {
 
     @Override
@@ -29,6 +29,7 @@ public class ApplicationConfig extends Application {
      * If required, comment out calling this method in getClasses().
      */
     private void addRestResourceClasses(Set<Class<?>> resources) {
+        resources.add(org.netbeans.rest.application.config.CorsFilters.class);
         resources.add(sv.ues.TPI_2018.boundaries.DiagnosticoParteResource.class);
         resources.add(sv.ues.TPI_2018.boundaries.DiagnosticoResource.class);
         resources.add(sv.ues.TPI_2018.boundaries.EquipoDetalleResource.class);
