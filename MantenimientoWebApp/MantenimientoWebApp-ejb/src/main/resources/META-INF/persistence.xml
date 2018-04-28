@@ -2,29 +2,29 @@
 <persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
   <persistence-unit name="sv.ues.TPI_2018_MantenimientoWebApp-ejb_ejb_1.0-SNAPSHOTPU" transaction-type="JTA">
     <jta-data-source>java:module/jdbc/TPI</jta-data-source>
-    <class>sv.ues.TPI_2018.Calendario</class>
-    <class>sv.ues.TPI_2018.CalendarioExcepcion</class>
-    <class>sv.ues.TPI_2018.Diagnostico</class>
-    <class>sv.ues.TPI_2018.DiagnosticoParte</class>
-    <class>sv.ues.TPI_2018.Equipo</class>
-    <class>sv.ues.TPI_2018.EquipoDetalle</class>
-    <class>sv.ues.TPI_2018.Estado</class>
-    <class>sv.ues.TPI_2018.EstadoMantenimientoDetalle</class>
-    <class>sv.ues.TPI_2018.MantenimientoDetalle</class>
-    <class>sv.ues.TPI_2018.Marca</class>
-    <class>sv.ues.TPI_2018.Modelo</class>
-    <class>sv.ues.TPI_2018.OrdenTrabajo</class>
-    <class>sv.ues.TPI_2018.Parte</class>
-    <class>sv.ues.TPI_2018.Paso</class>
-    <class>sv.ues.TPI_2018.Prioridad</class>
-    <class>sv.ues.TPI_2018.Procedimiento</class>
-    <class>sv.ues.TPI_2018.Responsable</class>
-    <class>sv.ues.TPI_2018.Solicitud</class>
-    <class>sv.ues.TPI_2018.SubTipoMantenimiento</class>
-    <class>sv.ues.TPI_2018.TipoMantenimiento</class>
-    <class>sv.ues.TPI_2018.TipoParte</class>
-    <class>sv.ues.TPI_2018.TipoResponsable</class>
-    <class>sv.ues.TPI_2018.Unidad</class>
+    <class>sv.ues.TPI_2018.entities.EquipoDetalle</class>
+    <class>sv.ues.TPI_2018.entities.Responsable</class>
+    <class>sv.ues.TPI_2018.entities.Unidad</class>
+    <class>sv.ues.TPI_2018.entities.Diagnostico</class>
+    <class>sv.ues.TPI_2018.entities.DiagnosticoParte</class>
+    <class>sv.ues.TPI_2018.entities.TipoResponsable</class>
+    <class>sv.ues.TPI_2018.entities.OrdenTrabajo</class>
+    <class>sv.ues.TPI_2018.entities.Paso</class>
+    <class>sv.ues.TPI_2018.entities.TipoParte</class>
+    <class>sv.ues.TPI_2018.entities.Marca</class>
+    <class>sv.ues.TPI_2018.entities.Solicitud</class>
+    <class>sv.ues.TPI_2018.entities.Equipo</class>
+    <class>sv.ues.TPI_2018.entities.Estado</class>
+    <class>sv.ues.TPI_2018.entities.EstadoMantenimientoDetalle</class>
+    <class>sv.ues.TPI_2018.entities.SubTipoMantenimiento</class>
+    <class>sv.ues.TPI_2018.entities.Prioridad</class>
+    <class>sv.ues.TPI_2018.entities.TipoMantenimiento</class>
+    <class>sv.ues.TPI_2018.entities.Modelo</class>
+    <class>sv.ues.TPI_2018.entities.CalendarioExcepcion</class>
+    <class>sv.ues.TPI_2018.entities.Calendario</class>
+    <class>sv.ues.TPI_2018.entities.Parte</class>
+    <class>sv.ues.TPI_2018.entities.Procedimiento</class>
+    <class>sv.ues.TPI_2018.entities.MantenimientoDetalle</class>
     <exclude-unlisted-classes>true</exclude-unlisted-classes>
     <properties/>
   </persistence-unit>
